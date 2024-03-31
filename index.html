@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <section class="result">
+        <h2 class="heading">Your Result</h2>
+        <div class="marksCircle">
+          <h1>76</h1>
+          <p class="total">of 100</p>
+        </div>
+        <h2 class="greeting">Great</h2>
+        <p class="description">You scored higher than 65% of the people who have taken these tests.</p>
+      </section>
+      <section class="summary">
+        <h2>Summary</h2>
+        <div class="topicContainer reaction">
+          <div class="topic">
+            <img src="./assets/images/icon-reaction.svg" alt="reaction" />
+            <p>Reaction</p>
+          </div>
+          <div class="marks">
+            <p><span>80</span> / 100</p>
+          </div>
+        </div>
+        <div class="topicContainer memory">
+          <div class="topic">
+            <img src="./assets/images/icon-memory.svg" alt="memory" />
+            <p>Memory</p>
+          </div>
+          <div class="marks">
+            <p><span>92</span> / 100</p>
+          </div>
+        </div>
+        <div class="topicContainer verbal">
+          <div class="topic">
+            <img src="./assets/images/icon-verbal.svg" alt="verbal" />
+            <p>Verbal</p>
+          </div>
+          <div class="marks">
+            <p><span>61</span> / 100</p>
+          </div>
+        </div>
+        <div class="topicContainer visual">
+          <div class="topic">
+            <img src="./assets/images/icon-visual.svg" alt="visual" />
+            <p>Visual</p>
+          </div>
+          <div class="marks">
+            <p><span>72</span> / 100</p>
+          </div>
+        </div>
+        <button class="button">Continue</button>
+      </section>
+    </div>
+  </body>
+</html>

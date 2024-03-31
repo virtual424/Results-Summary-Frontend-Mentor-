@@ -1,0 +1,163 @@
+:root {
+  --Lightred: hsl(0, 100%, 67%);
+  --Orangeyyellow: hsl(39, 100%, 56%);
+  --Greenteal: hsl(166, 100%, 37%);
+  --Cobaltblue: hsl(234, 85%, 45%);
+  --LightslateblueBackground: hsl(252, 100%, 67%);
+  --LightroyalblueBackground: hsl(241, 81%, 54%);
+
+  --VioletblueCircle: hsla(256, 72%, 46%, 1);
+  --PersianblueCircle: hsla(241, 72%, 46%, 0);
+
+  --White: hsl(0, 0%, 100%);
+  --Paleblue: hsl(221, 100%, 96%);
+  --Lightlavender: hsl(241, 100%, 89%);
+  --Darkgrayblue: hsl(224, 30%, 27%);
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 18px;
+  margin: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.result {
+  background: linear-gradient(var(--LightslateblueBackground), var(--LightroyalblueBackground));
+  border-radius: 0 0 1.5em 1.5em;
+  padding: 2em 3em 1.5em 3em;
+  text-align: center;
+}
+
+.heading {
+  color: var(--Lightlavender);
+  font-weight: 700;
+}
+
+.greeting {
+  color: var(--White);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.7em;
+}
+
+.marksCircle {
+  border-radius: 100%;
+  padding: 1.2em 0;
+  width: 55%;
+  height: 40%;
+  margin: 1.2em auto;
+  color: white;
+  background: linear-gradient(var(--VioletblueCircle), var(--PersianblueCircle));
+}
+
+.total {
+  color: var(--Lightlavender);
+}
+
+.marksCircle > h1 {
+  font-size: 3rem;
+}
+
+.marksCircle > p {
+  font-size: small;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--Lightlavender);
+}
+
+.summary {
+  padding: 1.2em;
+}
+
+.topicContainer {
+  border-radius: 0.8em;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8em 0;
+}
+
+.topic {
+  display: flex;
+  align-items: center;
+  flex: 0.3;
+  gap: 0.5em;
+}
+
+.topic > p {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.marks > p {
+  font-size: 0.8rem;
+  color: gray;
+  font-weight: 700;
+}
+
+.marks span {
+  color: var(--Darkgrayblue);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: var(--Lightred);
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: var(--Orangeyyellow);
+}
+
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: var(--Greenteal);
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: var(--Cobaltblue);
+}
+
+.button {
+  background-color: var(--Darkgrayblue);
+  border-radius: 2em;
+  padding: 0.5em 0;
+  color: var(--White);
+  width: 100%;
+}
+
+@media screen and (min-width: 760px) {
+  .flex-container {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    transform: translateY(45%);
+  }
+
+  .result {
+    border-radius: 1.5em;
+    max-width: 375px;
+    width: 100%;
+  }
+
+  .summary {
+    max-width: 375px;
+    width: 100%;
+    border-radius: 0 1.5em 1.5em 0;
+  }
+}
